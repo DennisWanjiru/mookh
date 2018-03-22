@@ -1,0 +1,30 @@
+nav {
+    border-bottom: solid 2px #eee;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+
+        &-item {
+            background-color: #fff;
+            box-sizing: border-box;
+            padding: $m-size $xl-size;
+
+            a {
+                text-decoration: none;
+                color: #aaa;
+                font-size: $s-size;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .active {
+        border-bottom: solid .2rem gold;
+
+        a {
+            color: #000;
+        }
+    }
+}

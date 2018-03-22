@@ -1,0 +1,85 @@
+.header {
+    min-height: 70vh;
+    background-color: $secondary-color;
+    color: #fff;
+
+    .brand--logo {
+        display: flex;
+        justify-content: space-around;
+        padding-top: $xl-size;
+        margin: 0 auto $xxl-size auto;
+        width: 35rem;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        .section {
+            padding-right: 8rem;
+            width: 80%;
+            margin-bottom: $xl-space;
+
+            .title {
+                font-size: $m-size;
+                font-weight: bold;
+                padding-bottom: $m-space;
+            }
+            .subtitle {
+                font-size: $s-size;
+                font-weight: bold;
+                padding-bottom: $sm-space;
+            }
+            .description {
+                font-size: $sm-space;
+                padding-bottom: $lg-space;
+            }
+
+            input[type="search"] {
+                &::-webkit-input-placeholder {
+                    color: #fff;
+                }
+
+                &::-moz-placeholder {
+                    color: #fff;
+                }
+
+                &:-ms-input-placeholder {
+                    color: #fff;
+                }
+
+                &:-moz-placeholder {
+                    color: #fff;
+                }
+            }
+
+            &--buttons {
+                display: flex;
+                justify-content: space-between;
+
+                button {
+                    width: 30%;
+                }
+
+                .learn {
+                    background-color: $primary-color;
+                    color: #000;
+                }
+
+                .signup {
+                    background-color: $secondary-color;
+                    border-bottom: solid 1px grey;
+                    border-right: solid 1px #fff;
+                    color: #fff;
+                }
+
+                .login {
+                    background-color: $secondary-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}
+

@@ -1,0 +1,66 @@
+.card {
+    height: 48rem;
+    width: 30rem;
+    background-color: #eee;
+    margin-bottom: $xl-space;
+
+    &__header {
+        background-color: darken(#eee, 10%);
+        height: 55%;
+        position: relative;
+
+        &--image {
+            height: 100%;
+            width: 100%;
+        }
+
+        &--avatar {
+            background-color: #aaa;
+            height: 6rem;
+            left: 73%;
+            position: absolute;
+            top: 80%;
+            width: 6rem;
+            outline: solid .3rem #fff;
+        }
+    }
+
+    &__content {
+        border-bottom: solid 1px $secondary-color;
+        height: 33%;
+        box-sizing: border-box;
+        padding: 2rem;
+
+        &--title {
+            font-size: $s-size;
+            font-weight: bold;
+            padding-bottom: $sm-space;
+        }
+
+        &--owner {
+            font-size: 1.4rem;
+            padding-bottom: $sm-space;
+        }
+
+        &--details {
+            font-size: 1.4rem;
+            padding-bottom: $sm-space;
+        }
+    }
+
+    &__action {
+        display: flex;
+        button {
+            background: transparent;
+            text-transform: uppercase;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.category {
+    font-weight: bold;
+    font-size: $s-size;
+    padding-left: $sm-space;
+    margin-bottom: $sm-space;
+}

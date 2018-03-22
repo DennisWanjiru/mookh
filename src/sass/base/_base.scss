@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button, a {
+    cursor: pointer;
+    border: none;
+    padding: $xs-space;
+    margin: 0 auto;
+    flex-flow: initial;
+
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    background-color: $secondary-color;
+    border: none;
+    border-bottom: solid 1px #fff;
+    border-right: solid 1px #fff;
+    color: #fff;
+    padding: $xs-space;
+    width: 100%;
+
+    &:focus {
+        @extend input;
+    }
+}
+
+main {
+    margin: $xl-space auto;
+}
+
+.top-space--md {
+    margin-top: $m-size;
+}
