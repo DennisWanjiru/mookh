@@ -3,6 +3,11 @@
     background-color: $secondary-color;
     color: #fff;
 
+    .material-icons {
+        margin-bottom: $s-size;
+        font-size: $lg-space;
+    }
+
     .brand--logo {
         display: flex;
         justify-content: space-around;

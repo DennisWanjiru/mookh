@@ -104,6 +104,9 @@ main {
   min-height: 70vh;
   background-color: #333b40;
   color: #fff; }
+  .header .material-icons {
+    margin-bottom: 1.5rem;
+    font-size: 3.2rem; }
   .header .brand--logo {
     display: flex;
     justify-content: space-around;

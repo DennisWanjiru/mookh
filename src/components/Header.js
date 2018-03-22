@@ -13,7 +13,7 @@ const Header = props => (
                 <div className="row">
                     <div className="column-2">
                         <div className="section">
-                            <i class="material-icons">shopping_chart</i>
+                            <i class="material-icons">shopping_cart</i>
                             <h3 className="title">Buy Online</h3>
                             <div className="subtitle">Search for exisiting items below</div>
                             <p className="description">
@@ -26,7 +26,7 @@ const Header = props => (
 
                     <div className="column-2">
                         <div className="section">
-                            <i class="material-icons">insert_chart</i>
+                            <i class="material-icons">date_range</i>
                             <h3 className="title">Sell Online</h3>
                             <div className="subtitle">Power your exisiting websites on social media pages</div>
                             <p className="description">

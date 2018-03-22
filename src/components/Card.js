@@ -26,7 +26,9 @@ const Card = props => (
             </div>
 
             <div className="card__action">
-                <button>view store</button>
+                <button>
+                    view store
+                </button>
             </div>
         </div>
     </div>
