@@ -6,30 +6,38 @@ const Header = props => (
     <div>
         <section className="header">
             <div className="container">
+                <h1>
                 <img class="brand--logo" src={mookhLogo} alt="Mookh" />
+                </h1>
 
-                <div className="header__content">
-                    <div className="section">
-                        <h3 className="title">Buy Online</h3>
-                        <div className="subtitle">Search for exisiting items below</div>
-                        <p className="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint temporibus unde, neque dignissimos sapiente, ad et quod eaque distinctio tempore aspernatur. Animi illo aperiam ullam excepturi impedit itaque facere ipsum?
-                    </p>
+                <div className="row">
+                    <div className="column-2">
+                        <div className="section">
+                            <i class="material-icons">shopping_chart</i>
+                            <h3 className="title">Buy Online</h3>
+                            <div className="subtitle">Search for exisiting items below</div>
+                            <p className="description">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint temporibus unde, neque dignissimos sapiente, ad et quod eaque distinctio tempore aspernatur. Animi illo aperiam ullam excepturi impedit itaque facere ipsum?
+                            </p>
 
-                        <input type="search" name="search" placeholder="Search" />
+                            <input type="search" name="search" placeholder="Search" />
+                        </div>
                     </div>
 
-                    <div className="section">
-                        <h3 className="title">Sell Online</h3>
-                        <div className="subtitle">Power your exisiting websites on social media pages</div>
-                        <p className="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint temporibus unde, neque dignissimos sapiente, ad et quod eaque distinctio.
-                    </p>
+                    <div className="column-2">
+                        <div className="section">
+                            <i class="material-icons">insert_chart</i>
+                            <h3 className="title">Sell Online</h3>
+                            <div className="subtitle">Power your exisiting websites on social media pages</div>
+                            <p className="description">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint temporibus unde, neque dignissimos sapiente, ad et quod eaque distinctio.
+                            </p>
 
-                        <div className="section--buttons top-space--md">
-                            <button className="learn">Learn more</button>
-                            <button className="signup">Sign Up</button>
-                            <button className="login">Log in</button>
+                            <div className="section--buttons top-space--lg">
+                                <button className="learn">Learn more</button>
+                                <button className="signup">Sign Up</button>
+                                <button className="login">Log in</button>
+                            </div>
                         </div>
                     </div>
                 </div>

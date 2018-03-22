@@ -1,6 +1,7 @@
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%;
@@ -12,14 +13,6 @@ button, a {
   padding: 0.9rem;
   margin: 0 auto;
   flex-flow: initial; }
-
-.container {
-  width: 75%;
-  margin: 0 auto; }
-
-.row {
-  display: flex;
-  justify-content: space-between; }
 
 input, input:focus {
   background-color: #333b40;
@@ -33,14 +26,34 @@ input, input:focus {
 main {
   margin: 5.2rem auto; }
 
-.top-space--md {
-  margin-top: 1.9rem; }
+.top-space--lg {
+  margin-top: 3.2rem; }
 
+.container {
+  width: 75%;
+  margin: 0 auto; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.column-3 {
+  flex-grow: 1;
+  min-width: 30%; }
+
+.column-2 {
+  flex-grow: 1;
+  min-width: 25%; }
+
+@media (max-width: 763px) {
+  .container {
+    width: 85%;
+    margin: 0 auto; } }
 .card {
-  height: 48rem;
-  width: 30rem;
   background-color: #eee;
-  margin-bottom: 5.2rem; }
+  height: 48rem;
+  margin-bottom: 5.2rem;
+  max-width: 30rem; }
   .card__header {
     background-color: #d5d5d5;
     height: 55%;
@@ -84,6 +97,9 @@ main {
   padding-left: 1.3rem;
   margin-bottom: 1.3rem; }
 
+@media (max-width: 763px) {
+  .card {
+    min-width: 33.33%; } }
 .header {
   min-height: 70vh;
   background-color: #333b40;
@@ -94,49 +110,51 @@ main {
     padding-top: 4.9rem;
     margin: 0 auto 10rem auto;
     width: 35rem; }
-  .header__content {
-    display: flex;
-    justify-content: space-between; }
-    .header__content .section {
-      padding-right: 8rem;
-      width: 80%;
-      margin-bottom: 5.2rem; }
-      .header__content .section .title {
-        font-size: 1.9rem;
-        font-weight: bold;
-        padding-bottom: 2.3rem; }
-      .header__content .section .subtitle {
-        font-size: 1.5rem;
-        font-weight: bold;
-        padding-bottom: 1.3rem; }
-      .header__content .section .description {
-        font-size: 1.3rem;
-        padding-bottom: 3.2rem; }
-      .header__content .section input[type="search"]::-webkit-input-placeholder {
+  .header .section {
+    max-width: 45rem;
+    padding-bottom: 4.9rem; }
+    .header .section .title {
+      font-size: 1.9rem;
+      font-weight: bold;
+      padding-bottom: 2.3rem; }
+    .header .section .subtitle {
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding-bottom: 1.3rem; }
+    .header .section .description {
+      font-size: 1.3rem;
+      padding-bottom: 3.2rem; }
+    .header .section input[type="search"]::-webkit-input-placeholder {
+      color: #fff; }
+    .header .section input[type="search"]::-moz-placeholder {
+      color: #fff; }
+    .header .section input[type="search"]:-ms-input-placeholder {
+      color: #fff; }
+    .header .section input[type="search"]:-moz-placeholder {
+      color: #fff; }
+    .header .section--buttons {
+      display: flex;
+      justify-content: space-between; }
+      .header .section--buttons button {
+        width: 30%; }
+      .header .section--buttons .learn {
+        background-color: #ffff33;
+        color: #000; }
+      .header .section--buttons .signup {
+        background-color: #333b40;
+        border-bottom: solid 1px grey;
+        border-right: solid 1px #fff;
         color: #fff; }
-      .header__content .section input[type="search"]::-moz-placeholder {
+      .header .section--buttons .login {
+        background-color: #333b40;
         color: #fff; }
-      .header__content .section input[type="search"]:-ms-input-placeholder {
-        color: #fff; }
-      .header__content .section input[type="search"]:-moz-placeholder {
-        color: #fff; }
-      .header__content .section--buttons {
-        display: flex;
-        justify-content: space-between; }
-        .header__content .section--buttons button {
-          width: 30%; }
-        .header__content .section--buttons .learn {
-          background-color: #ffff33;
-          color: #000; }
-        .header__content .section--buttons .signup {
-          background-color: #333b40;
-          border-bottom: solid 1px grey;
-          border-right: solid 1px #fff;
-          color: #fff; }
-        .header__content .section--buttons .login {
-          background-color: #333b40;
-          color: #fff; }
 
+@media (max-width: 763px) {
+  .brand--logo {
+    display: flex;
+    padding-top: 4.9rem;
+    margin: 0 0 10rem 0;
+    max-width: 20rem; } }
 nav {
   border-bottom: solid 2px #eee; }
   nav .navbar {

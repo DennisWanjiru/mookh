@@ -43,9 +43,7 @@ class App extends Component {
                 owner="Muthoni"
                 details={'Album(12 Songs). LP Available'}
               />
-            </div>
 
-            <div className="row">
               <Card
                 category="Tickets"
                 image={picSix}

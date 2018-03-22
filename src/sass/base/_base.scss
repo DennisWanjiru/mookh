@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -15,16 +16,6 @@ button, a {
     margin: 0 auto;
     flex-flow: initial;
 
-}
-
-.container {
-    width: 75%;
-    margin: 0 auto;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
 }
 
 input {
@@ -45,6 +36,6 @@ main {
     margin: $xl-space auto;
 }
 
-.top-space--md {
-    margin-top: $m-size;
+.top-space--lg {
+    margin-top: $lg-space;
 }

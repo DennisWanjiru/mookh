@@ -1,8 +1,8 @@
 .card {
-    height: 48rem;
-    width: 30rem;
     background-color: #eee;
+    height: 48rem;
     margin-bottom: $xl-space;
+    max-width: 30rem;
 
     &__header {
         background-color: darken(#eee, 10%);
@@ -63,4 +63,10 @@
     font-size: $s-size;
     padding-left: $sm-space;
     margin-bottom: $sm-space;
+}
+
+@media (max-width: 763px) {
+  .card {
+    min-width: 33.33%;
+  }
 }

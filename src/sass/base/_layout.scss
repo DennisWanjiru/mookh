@@ -1,0 +1,27 @@
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+}
+
+.column-3 {
+    flex-grow: 1;
+    min-width: 30%;
+}
+
+.column-2 {
+    flex-grow: 1;
+    min-width: 25%;
+}
+
+@media (max-width: 763px) {
+   .container {
+        width: 85%;
+        margin: 0 auto;
+    }
+}

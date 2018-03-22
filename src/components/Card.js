@@ -2,7 +2,7 @@ import React from 'react';
 import picOne from '../images/pic2.jpg';
 
 const Card = props => (
-    <div>
+    <div class="column-3">
         <h4 className="category">{props.category}</h4>
 
         <div className="card">
