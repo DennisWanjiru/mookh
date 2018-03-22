@@ -50,7 +50,7 @@ main {
     width: 85%;
     margin: 0 auto; } }
 .card {
-  background-color: #eee;
+  background-color: whitesmoke;
   height: 48rem;
   margin-bottom: 5.2rem;
   max-width: 30rem; }
@@ -70,7 +70,7 @@ main {
       width: 6rem;
       outline: solid .3rem #fff; }
   .card__content {
-    border-bottom: solid 1px #333b40;
+    border-bottom: solid 1px #ddd;
     height: 33%;
     box-sizing: border-box;
     padding: 2rem; }
@@ -143,14 +143,25 @@ main {
       .header .section--buttons .learn {
         background-color: #ffff33;
         color: #000; }
+        .header .section--buttons .learn:hover {
+          background-color: #333b40;
+          border-bottom: solid 1px grey;
+          border-right: solid 1px #fff;
+          color: #fff; }
       .header .section--buttons .signup {
         background-color: #333b40;
         border-bottom: solid 1px grey;
         border-right: solid 1px #fff;
         color: #fff; }
+        .header .section--buttons .signup:hover {
+          background-color: #ffff33;
+          color: #000; }
       .header .section--buttons .login {
         background-color: #333b40;
         color: #fff; }
+        .header .section--buttons .login:hover {
+          background-color: #ffff33;
+          color: #000; }
 
 @media (max-width: 763px) {
   .brand--logo {

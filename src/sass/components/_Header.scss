@@ -64,6 +64,13 @@
             .learn {
                 background-color: $primary-color;
                 color: #000;
+
+                &:hover {
+                    background-color: $secondary-color;
+                    border-bottom: solid 1px grey;
+                    border-right: solid 1px #fff;
+                    color: #fff;
+                }
             }
 
             .signup {
@@ -71,11 +78,21 @@
                 border-bottom: solid 1px grey;
                 border-right: solid 1px #fff;
                 color: #fff;
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: #000;
+                }
             }
 
             .login {
                 background-color: $secondary-color;
                 color: #fff;
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: #000;
+                }
             }
         }
     }
