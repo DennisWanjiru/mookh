@@ -16,6 +16,11 @@ class App extends Component {
     return (
       <div>
         <header>
+          <div className="container">
+            <div className="hamburger">
+              <i class="material-icons">menu</i>
+            </div>
+          </div>
           <Header />
         </header>
 
@@ -27,7 +32,7 @@ class App extends Component {
                 image={picOne}
                 title="Blissful USION"
                 owner="TEDx Kenya"
-                albumDate={'Friday 13th April - 24 Days to go'}
+                albumDate={'Friday 13th April - 23 Days to go'}
               />
               <Card
                 category="Products"

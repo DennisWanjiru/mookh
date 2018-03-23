@@ -4,12 +4,16 @@ nav {
     .navbar {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         list-style: none;
 
         &-item {
             background-color: #fff;
             box-sizing: border-box;
             padding: $m-size $xl-size;
+            text-align: center;
+            min-width: 20%;
+            flex-grow: 1;
 
             a {
                 text-decoration: none;
@@ -27,4 +31,10 @@ nav {
             color: #000;
         }
     }
+}
+
+@media (max-width: 1018px) {
+  nav {
+    display: none;
+  }
 }

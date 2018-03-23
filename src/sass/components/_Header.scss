@@ -99,12 +99,30 @@
 
 }
 
-@media (max-width: 763px) {
+header {
+    position: relative;
+
+    .hamburger {
+        position: absolute;
+        color: #fff;
+        top: 3%;
+    }
+}
+
+@media (max-width: 700px) {
     .brand--logo {
         display: flex;
-        // justify-content: space-around;
         padding-top: $xl-size;
         margin: 0 0 $xxl-size 0;
         max-width: 20rem;
+    }
+}
+
+@media (min-width: 1019px) {
+    .hamburger {
+        position: absolute;
+        color: #fff;
+        top: 3%;
+        opacity: 0;
     }
 }

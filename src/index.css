@@ -45,7 +45,7 @@ main {
   flex-grow: 1;
   min-width: 25%; }
 
-@media (max-width: 763px) {
+@media (max-width: 700px) {
   .container {
     width: 85%;
     margin: 0 auto; } }
@@ -97,7 +97,7 @@ main {
   padding-left: 1.3rem;
   margin-bottom: 1.3rem; }
 
-@media (max-width: 763px) {
+@media (max-width: 700px) {
   .card {
     min-width: 33.33%; } }
 .header {
@@ -163,22 +163,39 @@ main {
           background-color: #ffff33;
           color: #000; }
 
-@media (max-width: 763px) {
+header {
+  position: relative; }
+  header .hamburger {
+    position: absolute;
+    color: #fff;
+    top: 3%; }
+
+@media (max-width: 700px) {
   .brand--logo {
     display: flex;
     padding-top: 4.9rem;
     margin: 0 0 10rem 0;
     max-width: 20rem; } }
+@media (min-width: 1019px) {
+  .hamburger {
+    position: absolute;
+    color: #fff;
+    top: 3%;
+    opacity: 0; } }
 nav {
   border-bottom: solid 2px #eee; }
   nav .navbar {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none; }
     nav .navbar-item {
       background-color: #fff;
       box-sizing: border-box;
-      padding: 1.9rem 4.9rem; }
+      padding: 1.9rem 4.9rem;
+      text-align: center;
+      min-width: 20%;
+      flex-grow: 1; }
       nav .navbar-item a {
         text-decoration: none;
         color: #aaa;
@@ -188,5 +205,9 @@ nav {
     border-bottom: solid .2rem gold; }
     nav .active a {
       color: #000; }
+
+@media (max-width: 1018px) {
+  nav {
+    display: none; } }
 
 /*# sourceMappingURL=index.css.map */
